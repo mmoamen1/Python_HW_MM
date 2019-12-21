@@ -36,11 +36,11 @@ with open(budget_data, newline='') as csvfile:
     print(f"The average change: ${mean_num}")
     with open('output.csv', 'w', newline="") as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(["The total number of months: 86"])
-        csvwriter.writerow(["Greatest increase: Feb-2012 1926159"])
-        csvwriter.writerow(["Greatest decrease: Sep-2013 -2196167"])
-        csvwriter.writerow(["The total value: 38382578"])
-        csvwriter.writerow(["The average change: -2315.1176470588234"])
+        csvwriter.writerow([f"The total number of months: {num_months}"])
+        csvwriter.writerow([f"Greatest increase: {max_month} ${max_value}"])
+        csvwriter.writerow([f"Greatest decrease: {min_month} ${min_value}"])
+        csvwriter.writerow([f"The total value: ${tot_num}"])
+        csvwriter.writerow([f"The average change: ${mean_num}"])
 
 
     
